@@ -1,0 +1,39 @@
+POST http://localhost:3000/login/register
+content-type: application/json
+
+{
+    "name": "John",
+    "email": "john@gmail.com",
+    "password":"1234",
+    "phone":78787878
+}
+
+###
+
+GET http://localhost:3000/login/getUser
+
+### Check Valid USer
+POST http://localhost:3000/login/isUser
+content-type: application/json
+
+{
+    "email": "john@gmail.com",
+    "password":"1234"
+}
+
+###
+POST http://localhost:3000/login/addStudent
+content-type: application/json
+
+{
+    "name": "Shubham",
+    "email": "shubham@gmail.com",
+    "password":"1234",
+    "phone":78787878,
+    "gender":"Male",
+    "city":"surat",
+    "hobby":["Swimming"]
+}
+
+###
+GET http://localhost:3000/login/display
